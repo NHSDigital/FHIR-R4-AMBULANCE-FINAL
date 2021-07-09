@@ -1,0 +1,8 @@
+{
+  "updated": "2021-03-05T14:14:45.0792713+00:00",
+  "dependencies": {
+    "UK.Core.r4.v2": "2.0.8",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}

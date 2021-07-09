@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ChiefComplaint"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ChiefComplaint"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceChiefComplaint"/>
+	<title value="CodeSystem Ambulance Chief Complaint"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the initial chief complaint of the patient based on the information provided during telephone call to the ambulance control room."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Abdominal Pain"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Accident caused by electric current"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Accident involving land transport vehicle"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Acute Allergic Reaction"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Animal Bite Wound"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Assault"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Back Problem"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Bleeding"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Burn Injury"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Cardiac Arrest"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Cardiac Problem"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Chest Pain"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Choking (finding)"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Collapse"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="Coughing Up Blood"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="Death Verification"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="Dental Problem"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="Diabetes"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="Drowning"/>
+	</concept>
+	<concept>
+		<code value="20"/>
+		<display value="Ear Problem"/>
+	</concept>
+	<concept>
+		<code value="21"/>
+		<display value="Entrapment Event"/>
+	</concept>
+	<concept>
+		<code value="22"/>
+		<display value="Epistaxis"/>
+	</concept>
+	<concept>
+		<code value="23"/>
+		<display value="Exposure to communicable disease"/>
+	</concept>
+	<concept>
+		<code value="24"/>
+		<display value="Exposure to Extreme Temperature"/>
+	</concept>
+	<concept>
+		<code value="25"/>
+		<display value="Exposure to potentially hazardous chemical"/>
+	</concept>
+	<concept>
+		<code value="26"/>
+		<display value="Eye Problem"/>
+	</concept>
+	<concept>
+		<code value="27"/>
+		<display value="Facial Pain"/>
+	</concept>
+	<concept>
+		<code value="28"/>
+		<display value="Fall"/>
+	</concept>
+	<concept>
+		<code value="29"/>
+		<display value="Foreign Body"/>
+	</concept>
+	<concept>
+		<code value="30"/>
+		<display value="Headache"/>
+	</concept>
+	<concept>
+		<code value="31"/>
+		<display value="Influenza like illness"/>
+	</concept>
+	<concept>
+		<code value="32"/>
+		<display value="Inter facility transport"/>
+	</concept>
+	<concept>
+		<code value="33"/>
+		<display value="Limb ischaemia"/>
+	</concept>
+	<concept>
+		<code value="34"/>
+		<display value="Medical Problem"/>
+	</concept>
+	<concept>
+		<code value="35"/>
+		<display value="Mental Health Problems"/>
+	</concept>
+	<concept>
+		<code value="36"/>
+		<display value="No Info available 111"/>
+	</concept>
+	<concept>
+		<code value="37"/>
+		<display value="No Info available 999"/>
+	</concept>
+	<concept>
+		<code value="38"/>
+		<display value="Open Wound"/>
+	</concept>
+	<concept>
+		<code value="39"/>
+		<display value="Patient Alarm"/>
+	</concept>
+	<concept>
+		<code value="40"/>
+		<display value="Penetrating wound"/>
+	</concept>
+	<concept>
+		<code value="41"/>
+		<display value="Poisoning from any source"/>
+	</concept>
+	<concept>
+		<code value="42"/>
+		<display value="Postoperative / medical device with complication"/>
+	</concept>
+	<concept>
+		<code value="43"/>
+		<display value="Pregnancy related"/>
+	</concept>
+	<concept>
+		<code value="44"/>
+		<display value="Problem of lower limb"/>
+	</concept>
+	<concept>
+		<code value="45"/>
+		<display value="Problem of upper limb"/>
+	</concept>
+	<concept>
+		<code value="46"/>
+		<display value="Problems relating to breast"/>
+	</concept>
+	<concept>
+		<code value="47"/>
+		<display value="Problems relating to vagina"/>
+	</concept>
+	<concept>
+		<code value="48"/>
+		<display value="Referred by establishment"/>
+	</concept>
+	<concept>
+		<code value="49"/>
+		<display value="Safeguarding Issues"/>
+	</concept>
+	<concept>
+		<code value="50"/>
+		<display value="Seizure"/>
+	</concept>
+	<concept>
+		<code value="51"/>
+		<display value="Short of Breath"/>
+	</concept>
+	<concept>
+		<code value="52"/>
+		<display value="Social Problem"/>
+	</concept>
+	<concept>
+		<code value="53"/>
+		<display value="Special Patient Note"/>
+	</concept>
+	<concept>
+		<code value="54"/>
+		<display value="Stroke and TIA"/>
+	</concept>
+	<concept>
+		<code value="55"/>
+		<display value="Transport accidents"/>
+	</concept>
+	<concept>
+		<code value="56"/>
+		<display value="Transportation by Ambulance"/>
+	</concept>
+	<concept>
+		<code value="57"/>
+		<display value="Transportation to a Direct Admission Unit"/>
+	</concept>
+	<concept>
+		<code value="58"/>
+		<display value="Traumatic Injury"/>
+	</concept>
+	<concept>
+		<code value="59"/>
+		<display value="Vomiting"/>
+	</concept>
+	<concept>
+		<code value="60"/>
+		<display value="Wound with Complications"/>
+	</concept>
+</CodeSystem>

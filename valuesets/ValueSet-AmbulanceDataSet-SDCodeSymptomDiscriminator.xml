@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="AmbulanceDataSet-SDCodeSymptomDiscriminator"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-SDCodeSymptomDiscriminator"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetSDCodeSymptomDiscriminator"/>
+	<title value="Ambulance Data Set SD Code Symptom Discriminator"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Codes to identify the SD Code (Symptom Discriminator) of the condition following telephone triage by an ambulance service."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+		</include>
+	</compose>
+</ValueSet>

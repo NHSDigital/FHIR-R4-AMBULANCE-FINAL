@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ReceivingLocationCAD"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceReceivingLocationCAD"/>
+	<title value="CodeSystem Ambulance Receiving Location CAD"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the type of destination that the patient was conveyed to, from a short list of codes only applicable to See and Convey patients."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="ED"/>
+		<display value="Emergency Department (A and E)"/>
+	</concept>
+	<concept>
+		<code value="MAU"/>
+		<display value="Medical Assessment Unit"/>
+	</concept>
+	<concept>
+		<code value="SAU"/>
+		<display value="Surgical Assessment Unit"/>
+	</concept>
+	<concept>
+		<code value="EAU"/>
+		<display value="Emergency Assessment Unit"/>
+	</concept>
+	<concept>
+		<code value="FEAU"/>
+		<display value="Frail Elderly Assessment Unit"/>
+	</concept>
+	<concept>
+		<code value="ACC "/>
+		<display value="Ambulatory Care Centre"/>
+	</concept>
+	<concept>
+		<code value="AMU"/>
+		<display value="Acute Medical Unit"/>
+	</concept>
+	<concept>
+		<code value="CCU"/>
+		<display value="Coronary Care Unit"/>
+	</concept>
+	<concept>
+		<code value="ADD"/>
+		<display value="Admissions Unit"/>
+	</concept>
+	<concept>
+		<code value="MAT"/>
+		<display value="Maternity"/>
+	</concept>
+	<concept>
+		<code value="PED"/>
+		<display value="Paediatric Emergency Department (A and E)"/>
+	</concept>
+	<concept>
+		<code value="AEC"/>
+		<display value="Ambulatory Emergency Care"/>
+	</concept>
+	<concept>
+		<code value="HASU"/>
+		<display value="Hyper Acute Stroke Unit"/>
+	</concept>
+	<concept>
+		<code value="ICU"/>
+		<display value="Intensive Care Unit"/>
+	</concept>
+	<concept>
+		<code value="PICU"/>
+		<display value="Paediatric Intensive Care Unit"/>
+	</concept>
+	<concept>
+		<code value="PPCI"/>
+		<display value="Primary Percutaneous Coronary Intervention Unit"/>
+	</concept>
+	<concept>
+		<code value="MTC"/>
+		<display value="Major Trauma Centre"/>
+	</concept>
+	<concept>
+		<code value="MHU"/>
+		<display value="Mental Health Unit"/>
+	</concept>
+	<concept>
+		<code value="MORT"/>
+		<display value="Mortuary"/>
+	</concept>
+	<concept>
+		<code value="GEN"/>
+		<display value="Hospital - Other Department/Ward"/>
+	</concept>
+	<concept>
+		<code value="DIR"/>
+		<display value="Direct Admission"/>
+	</concept>
+	<concept>
+		<code value="SPED"/>
+		<display value="Specialist ED or Unit (A and E)"/>
+	</concept>
+	<concept>
+		<code value="WIC"/>
+		<display value="Walk in Centre"/>
+	</concept>
+	<concept>
+		<code value="UCC"/>
+		<display value="Urgent Care Centre"/>
+	</concept>
+	<concept>
+		<code value="MIU"/>
+		<display value="Minor Injuries Unit"/>
+	</concept>
+	<concept>
+		<code value="UTC"/>
+		<display value="Urgent Treatment Centre"/>
+	</concept>
+	<concept>
+		<code value="UNK"/>
+		<display value="Unknown Destination"/>
+	</concept>
+	<concept>
+		<code value="OTH"/>
+		<display value="Other Destination"/>
+	</concept>
+</CodeSystem>

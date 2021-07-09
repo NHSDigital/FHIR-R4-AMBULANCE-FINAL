@@ -1,0 +1,14 @@
+{
+  "name": "structuredefinitions",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "author": null,
+  "dependencies": {
+    "UK.Core.r4.v2": "2.0.8"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "devDependencies": null,
+  "canonicals": null
+}

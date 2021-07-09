@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodeSystem-Ambulance-SGCodeSymptomGroup" />
+  <url value="https://fhir.nhs.uk/CodeSystem/Ambulance-SGCodeSymptomGroup" />
+  <version value="2.0.0" />
+  <name value="CodeSystemAmbulanceSGCodeSymptomGroup" />
+  <title value="CodeSystem Ambulance SG Code Symptom Group" />
+  <status value="draft" />
+  <date value="2021-12-26T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the SG Code (Symptom Group) of the condition following telephone triage by an ambulance service. It is populated with codes accessible to ambulance services through the NHS Futures Clinical Coding webpage." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="not-present"/>
+</CodeSystem>

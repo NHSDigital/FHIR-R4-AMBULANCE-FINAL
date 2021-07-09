@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-AmbulanceDataSet-ResponseCategoryType"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-ResponseCategoryType"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceDataSetResponseCategoryType"/>
+	<title value="CodeSystem Ambulance Data Set Response Category Type"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A code to indicate the initial or final acuity categorisation."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="initial"/>
+		<display value="Initial Response Category"/>
+	</concept>
+	<concept>
+		<code value="reporting"/>
+		<display value="Reporting Response Category"/>
+	</concept>
+</CodeSystem>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="AmbulanceDataSet-ResponseType"/>
+	<url value="https://fhir.nhs.uk/ValueSet/AmbulanceDataSet-ResponseType"/>
+	<version value="2.0.0"/>
+	<name value="AmbulanceDataSetResponseType"/>
+	<title value="Ambulance Data Set Response Type"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Codes to identify the type of response that is allocated to a call. "/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseType"/>
+		</include>
+	</compose>
+</ValueSet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-Cat1EarlyPredictionFlag"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-Cat1EarlyPredictionFlag"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceCat1EarlyPredictionFlag"/>
+	<title value="CodeSystem Ambulance Cat 1 Early Prediction Flag"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify calls that were early identified as a Category 1 call."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Cat 1 early predicted"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Cat 1 not early predicted"/>
+	</concept>
+</CodeSystem>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ResponseType"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ResponseType"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceResponseType"/>
+	<title value="CodeSystem Ambulance Response Type"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the type of response that is allocated to a call, e.g. an ambulance or a rapid response vehicle for a face to face response."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="DCA: Double Crewed Ambulance (Emergency) "/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="RRV: Rapid Response Vehicle"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="NAM: Double Crewed Ambulance (Non-Emergency Urgent Tier) "/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="HEL: Helicopter"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="CFR: Community First Responder "/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="DFB: Defibrillator"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="PED: Pedal Cycle "/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="MOT: Motorbike"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="OFF: Officer"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="PTS: Patient Transport Service"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="TAX: Taxi / dial-a-ride"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="MIV: Major Incident Vehicle"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="HAZ: HART (Hazardous Area Response Team) Vehicle"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="BAS: Basics Doctor"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="ECP: Emergency Care Practitioner"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="OAMB: Other Ambulance (can convey)"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="OVEH: Other Vehicle (non-conveying)"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="FIR: Fire Co-Responder"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="FAL: Falls Team"/>
+	</concept>
+	<concept>
+		<code value="20"/>
+		<display value="MHC: Mental Health Car"/>
+	</concept>
+	<concept>
+		<code value="97"/>
+		<display value="NRT: Not Applicable (No response required)"/>
+	</concept>
+	<concept>
+		<code value="98"/>
+		<display value="OTH: Other co-responding team"/>
+	</concept>
+	<concept>
+		<code value="99"/>
+		<display value="UNK: Unknown (Response type not known)"/>
+	</concept>
+</CodeSystem>

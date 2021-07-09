@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ClinicalSkillLevel"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceClinicalSkillLevel"/>
+	<title value="CodeSystem Ambulance Clinical Skill Level"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the clinical skill level of the Practitioner."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Non-registered clinician – non-EMT"/>
+		<definition value="Emergency Care Assistant, Non-Emergency Transport, Patient Transport Services, Community First Responder"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Non-registered clinician - EMT"/>
+		<definition value="Student Paramedic, Emergency Medical Technician"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Registered Clinician"/>
+		<definition value="Nurse, Paramedic, Allied Health Professional"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Registered Clinician working at Clinical Speciality and/or Supervisory Level"/>
+		<definition value="Specialist Practitioner, Clinical Team Leader, Critical Care Practitioner"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Registered Clinician working at Advanced Practice Level"/>
+		<definition value="Doctor, Consultant Practitioner, Advanced Practitioner"/>
+	</concept>
+</CodeSystem>

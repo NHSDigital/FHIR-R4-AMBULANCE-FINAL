@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-CallOrigin"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-CallOrigin"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceCallOrigin"/>
+	<title value="CodeSystem Ambulance Call Origin"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the origin of the call into the ambulance control room, whether 999 was directly dialled or it was transferred from another agency."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="999"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="NHS 111"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Healthcare Professional"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Police Force"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Telecare Provider/Service"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Other Ambulance Service"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Custodial Service"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Coastguard Service"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Military Service"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Fire Service"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Operational running call"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Event running call"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Mountain Rescue"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Water Rescue"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="British Transport Police"/>
+	</concept>
+	<concept>
+		<code value="98"/>
+		<display value="Other Agency (not listed)"/>
+	</concept>
+</CodeSystem>

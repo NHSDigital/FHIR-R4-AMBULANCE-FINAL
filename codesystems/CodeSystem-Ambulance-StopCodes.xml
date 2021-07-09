@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-StopCodes"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-StopCodes"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceStopCodes"/>
+	<title value="CodeSystem Ambulance Stop Codes"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the reason the call was closed if no face to face response was received from the ambulance service."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Duplicate"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Information "/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Passed to another ambulance Service"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Hoax"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Cancelled by Caller - Delay"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Cancelled by Caller - Recovered"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Cancelled by Caller -Other"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Cancelled by other Emergency Service"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="No Send - Demand Management"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Abandon"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Police Transported S136 "/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Police Transported Other"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Self Care"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Refer to GP"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="Refer to A and E"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="Refer to MIU/WIC"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="Refer to HCP"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="Refer to Specific service"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="Refer to 111/OOH"/>
+	</concept>
+</CodeSystem>

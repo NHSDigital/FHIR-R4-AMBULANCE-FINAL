@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodeSystem-AmbulanceDataSet-TriageCategory" />
+  <url value="https://fhir.nhs.uk/CodeSystem/AmbulanceDataSet-TriageCategory" />
+  <version value="2.0.0" />
+  <name value="CodeSystemAmbulanceDataSetTriageCategory" />
+  <title value="CodeSystem Ambulance Data Set Triage Category" />
+  <status value="draft" />
+  <date value="2021-12-26T00:00:00+00:00" />
+  <publisher value="NHS Digital" />
+  <contact>
+    <name value="NHS Digital" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="A CodeSystem to identify the type of triage observation being made." />
+  <copyright value="Copyright © 2020 NHS Digital" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="01" />
+    <display value="AMPDS Triage Disposition" />
+  </concept>
+  <concept>
+    <code value="02" />
+    <display value="Pathways Triage Disposition" />
+  </concept>
+  <concept>
+    <code value="03" />
+    <display value="SG Code (Symptom Group)" />
+  </concept>
+  <concept>
+    <code value="04" />
+    <display value="SD Code (Symptom Discriminator)" />
+  </concept>
+ </CodeSystem>

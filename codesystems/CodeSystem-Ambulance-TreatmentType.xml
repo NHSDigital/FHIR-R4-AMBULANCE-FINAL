@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-TreatmentType"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-TreatmentType"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulanceTreatmentType"/>
+	<title value="CodeSystem Ambulance Treatment Type"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the overall outcome of the call."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Hear and Treat"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="See and Treat"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="See and Convey"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Other Scenario (duplicate call, information only call, no treatment required)"/>
+	</concept>
+</CodeSystem>

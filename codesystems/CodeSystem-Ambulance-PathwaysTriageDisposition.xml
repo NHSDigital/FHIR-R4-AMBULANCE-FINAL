@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-PathwaysTriageDisposition"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystemAmbulancePathwaysTriageDisposition"/>
+	<title value="CodeSystem Ambulance Pathways Triage Disposition"/>
+	<status value="draft"/>
+	<date value="2021-01-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the acuity and condition after telephone triage by an ambulance service which uses the Pathways triage system. It is populated with codes accessible to ambulance services through the NHS Futures Clinical Coding webpage."/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="not-present"/>
+</CodeSystem>
