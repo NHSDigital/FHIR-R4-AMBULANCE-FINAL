@@ -18,6 +18,61 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
 				</meta>
+				<!-- ## Time Call Ended (ADS24) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-call-ended"/>
+								<display value="Time Call Ended"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>					
+				<!-- ## Time Call Answered (ADS11) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-call-answered"/>
+								<display value="Time Call Answered"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>					
+				<!-- ## Clock Start Date Time (ADS9) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="clock-start-date-time"/>
+								<display value="Clock Start Date Time"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>				
+				<!--NHS111 Flag (ADS7)(only present if call originated from NHS111 - so will only ever be Yes)-->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-111Flag">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+							<code value="Y"/>
+							<display value="Yes"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>				
 				<!-- ## Call Origin (ADS2B) ## -->
 				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-CallOrigin">
 					<valueCodeableConcept>
@@ -130,6 +185,14 @@
 				</identifier>
 				<!-- This is a FHIR mandatory status code. If the call was stopped, this would be "stopped" and a statusReason included. -->
 				<status value="completed"/>
+				<!--## stop code (ADS4)-->
+				<statusReason>
+					<coding>
+						<code value="12"/>
+						<system value="http://fhir.nhs.uk/CodeSystem/StopCode"/>
+						<display value="Police Transported Other"/>
+					</coding>
+				</statusReason>
 				<!--## Treatment Type (ADS33) ## -->
 				<category>
 					<coding>
@@ -250,6 +313,51 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>		
+				<!-- ## Time 	Time Stood Down (ADS41) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-stood-down"/>
+								<display value="Time Stood Down"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>							
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>						
 				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
 				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
@@ -347,6 +455,51 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>		
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>		
+				<!-- ## 	Time Resource Left Scene (ADS42) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-left-scene"/>
+								<display value="Time Resource Left Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>											
 				<identifier>
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="9450d479-328c-4c3c-bf35-efb1d80bd576"/>
@@ -408,6 +561,36 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>	
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>										
 				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
 				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
@@ -749,4 +932,124 @@
 			</Organization>
 		</resource>
 	</entry>
+	<!--AMPDS Triage Disposition (ADS16)-->
+	<entry>
+		<fullUrl value="urn:uuid:0dabe91e-f1c9-4a55-8231-ed7453f29a8b"/>
+		<resource>
+			<Observation>
+				<id value="0dabe91e-f1c9-4a55-8231-ed7453f29a8b"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS16)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="01"/>
+						<display value="AMPDS Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the AMPDSTriageDisposition-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
+						<system value="1A01"/>
+						<display value="Abdominal pain"/>						
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--AMPDS Triage Disposition (ADS17-->
+	<entry>
+		<fullUrl value="urn:uuid:bf1533f8-309a-4737-b485-73291eb912a8"/>
+		<resource>
+			<Observation>
+				<id value="bf1533f8-309a-4737-b485-73291eb912a8"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS17)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="02"/>
+						<display value="Pathways Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the ADS-TriageCategory-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
+						<system value="DG10"/>
+						<display value="Ambulance request"/>						
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>	
+	<!--AMPDS Triage Disposition (ADS18)-->
+	<entry>
+		<fullUrl value="urn:uuid:bf5ce3ef-65ab-464b-8f32-6c6e059b7e4e"/>
+		<resource>
+			<Observation>
+				<id value="bf5ce3ef-65ab-464b-8f32-6c6e059b7e4e"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="03"/>
+						<display value="SG Code (Symptom Group)"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the SGCodeSymptomGroup-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
+						<system value="SG9"/>
+						<display value="Symptom group display"/>						
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>		
+	<!--AMPDS Triage Disposition (ADS19)-->
+	<entry>
+		<fullUrl value="urn:uuid:bcd5a787-7359-49f8-8412-2790ab47c8fd"/>
+		<resource>
+			<Observation>
+				<id value="bcd5a787-7359-49f8-8412-2790ab47c8fd"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="04"/>
+						<display value="SD Code (Symptom Discriminator)"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the SGCodeSymptomGroup-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+						<system value="SD6"/>
+						<display value="Symptom Discriminator display"/>						
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>		
 </Bundle>
