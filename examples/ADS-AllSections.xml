@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="ADS-EPR-Example"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Bundle"/>
+		<tag>
+			<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-BundleType"/>
+			<code value="epr"/>
+			<display value="ADS FHIR Bundle - EPR items"/>
+		</tag>
+	</meta>
+	<type value="collection"/>
+	<!-- Communication entry, holds details about the call. -->
+	<entry>
+		<fullUrl value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Communication>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
+				</meta>
+				<!-- ## Time Call Ended (ADS24) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-call-ended"/>
+								<display value="Time Call Ended"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Call Answered (ADS11) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-call-answered"/>
+								<display value="Time Call Answered"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Clock Start Date Time (ADS9) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="clock-start-date-time"/>
+								<display value="Clock Start Date Time"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!--NHS111 Flag (ADS7)(only present if call originated from NHS111 - so will only ever be Yes)-->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-111Flag">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+							<code value="Y"/>
+							<display value="Yes"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!-- ## Call Origin (ADS2B) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-CallOrigin">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-CallOrigin"/>
+							<code value="01"/>
+							<display value="999"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!-- ## Time Dispatch Code Established (ADS21) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-dispatch-code-established"/>
+								<display value="Time Dispatch Code Established"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:36:30+00:00"/>
+					</extension>
+				</extension>
+				<!-- Cat 1 Early Prediction -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-Cat1EarlyPrediction">
+					<!-- ## Cat 1 Early Prediction Flag (ADS12) ## -->
+					<extension url="cat1EarlyPredictionFlag">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-Cat1EarlyPredictionFlag"/>
+								<code value="01"/>
+								<display value="Cat 1 early predicted"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!-- ## Time Cat 1 Early Prediction established (ADS15) ## -->
+					<extension url="timeCat1EarlyPredictionFlagEstablished">
+						<valueDateTime value="2020-06-29T15:35:55+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Initial Response Category (ADS15) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
+					<extension url="responseCategoryType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
+								<code value="initial"/>
+								<display value="Initial Response Category"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="responseCategoryCode">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseCategory"/>
+								<code value="C3"/>
+								<display value="Category 3"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<!-- ## Reporting Response Category (ADS20) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-ResponseCategory">
+					<extension url="responseCategoryType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-ResponseCategoryType"/>
+								<code value="reporting"/>
+								<display value="Reporting Response Category"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="responseCategoryCode">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseCategory"/>
+								<code value="C3"/>
+								<display value="Category 3"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<!-- ## AQI Response Time (ADS26) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIResponseTime">
+					<valueDuration>
+						<value value="48"/>
+						<unit value="second"/>
+						<system value="http://unitsofmeasure.org"/>
+					</valueDuration>
+				</extension>
+				<!-- ## AQI Incident Flag (ADS8) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-ADS-AQIIncidentFlag">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+							<code value="Y"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!-- ## Call Identifier (ADS3) ## -->
+				<identifier>
+					<system value="http://RX8/Id/call-identifier"/>
+					<value value="b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+					<!-- ## Call date (ADS2A) ## -->
+					<period>
+						<start value="2020-06-29T14:55:37+00:00"/>
+					</period>
+				</identifier>
+				<!-- This is a FHIR mandatory status code. If the call was stopped, this would be "stopped" and a statusReason included. -->
+				<status value="completed"/>
+				<!--## stop code (ADS4)-->
+				<statusReason>
+					<coding>
+						<code value="12"/>
+						<system value="http://fhir.nhs.uk/CodeSystem/StopCode"/>
+						<display value="Police Transported Other"/>
+					</coding>
+				</statusReason>
+				<!--## Treatment Type (ADS33) ## -->
+				<category>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-TreatmentType"/>
+						<code value="03"/>
+						<display value="See and Convey"/>
+					</coding>
+				</category>
+				<!-- ## Time Call Connected (ADS10) ## -->
+				<sent value="2020-06-29T15:34:55+00:00"/>
+				<!-- Reference to Provider Organization. -->
+				<recipient>
+					<reference value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+				</recipient>
+				<!-- Reference to Submitting Organization. -->
+				<sender>
+					<reference value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+				</sender>
+				<!-- ## Chief Complaint (Call Triage Code) (ADS14) ## -->
+				<reasonCode>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ChiefComplaint"/>
+						<code value="01"/>
+						<display value="Abdominal Pain"/>
+					</coding>
+				</reasonCode>
+			</Communication>
+		</resource>
+	</entry>
+	<!-- ServiceRequest entry. This resource identifies the ambulance response vehicles dispatched to an incident location, with the originating call referenced in the supporting information. -->
+	<entry>
+		<fullUrl value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
+		<resource>
+			<ServiceRequest>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-ServiceRequest"/>
+				</meta>
+				<status value="completed"/>
+				<intent value="order"/>
+				<!-- Reference to incident location -->
+				<subject>
+					<reference value="urn:uuid:a0e4207d-5dfd-41f4-850d-3870819e7a47"/>
+				</subject>
+				<!-- Reference to Ambulance Response Vehicle(s) -->
+				<locationReference>
+					<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+				</locationReference>
+				<locationReference>
+					<reference value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+				</locationReference>
+				<supportingInfo>
+					<!-- Reference to originating call -->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</supportingInfo>
+			</ServiceRequest>
+		</resource>
+	</entry>
+	<!-- Location entry for the incident location. -->
+	<entry>
+		<fullUrl value="urn:uuid:a0e4207d-5dfd-41f4-850d-3870819e7a47"/>
+		<resource>
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
+				</meta>
+				<!-- ## Incident location (ADS22) and Incident location postcode (ADS23) ## -->
+				<address>
+					<line value="12 Moseley Wood Bank"/>
+					<postalCode value="LS16 7HY"/>
+				</address>
+				<!-- ## CCG Code (ADS25) ## -->
+				<managingOrganization>
+					<identifier>
+						<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+						<value value="15F"/>
+					</identifier>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<!-- Observation entry for an AMPDS Triage Disposition. -->
+	<entry>
+		<fullUrl value="urn:uuid:d87bc2ec-bd8e-4443-b41f-59b4a978a1f3"/>
+		<resource>
+			<Observation>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AMPDSTriage-Observation"/>
+				</meta>
+				<!-- FHIR mandatory status code. -->
+				<status value="final"/>
+				<!-- Code to indicate which ADS triage code is being represented in the value -->
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<code value="01"/>
+						<display value="AMPDS Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!-- ## AMPDS Triage Disposition (ADS16) ## -->
+				<valueCodeableConcept>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
+						<code value="1A01"/>
+						<display value="Abdominal pain"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!-- First Encounter entry. This encounter covers callsign YAS123 attending to NHS Number 9912003888, who is conveyed to RR807. -->
+	<entry>
+		<fullUrl value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+		<resource>
+			<Encounter>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
+				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time 	Time Stood Down (ADS41) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-stood-down"/>
+								<display value="Time Stood Down"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-arrived-receiving-location"/>
+								<display value="Time Arrived at Receiving Location"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time of Patient Handover (ADS44) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-patient-handover"/>
+								<display value="Time Patient Handover"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T17:06:03+00:00"/>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</identifier>
+				<status value="finished"/>
+				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="Ambulance Transport"/>
+				</class>
+				<!-- Reference to the Patient entry. -->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<basedOn>
+					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
+				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+							<code value="ATND"/>
+							<display value="Attender"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:6b6cb092-6af5-4154-8d99-002614ec444e"/>
+					</individual>
+				</participant>
+				<period>
+					<!-- ## Time Resource Allocated (ADS38) ## -->
+					<start value="2020-06-29T15:36:44+00:00"/>
+					<!--## Time Clear (ADS45) ## -->
+					<end value="2020-06-29T18:56:44+00:00"/>
+				</period>
+				<hospitalization>
+					<!-- Reference to Receiving Location entry. -->
+					<destination>
+						<reference value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+					</destination>
+				</hospitalization>
+				<!-- Reference to the Ambulance resource that provided the care. -->
+				<location>
+					<location>
+						<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+					</location>
+					<physicalType>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<code value="ve"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!-- Second Encounter entry. This encounter covers callsign YAS123 attending to NHS Number 2233445566, who is not conveyed further. -->
+	<entry>
+		<fullUrl value="urn:uuid:9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+		<resource>
+			<Encounter>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
+				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## 	Time Resource Left Scene (ADS42) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-left-scene"/>
+								<display value="Time Resource Left Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+				</identifier>
+				<status value="finished"/>
+				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="Ambulance Transport"/>
+				</class>
+				<!-- Reference to the Patient entry. -->
+				<subject>
+					<reference value="urn:uuid:02bbfef1-39c3-4e3a-a4fc-4d48aec395b0"/>
+				</subject>
+				<basedOn>
+					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
+				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+							<code value="ATND"/>
+							<display value="Attender"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:6b6cb092-6af5-4154-8d99-002614ec444e"/>
+					</individual>
+				</participant>
+				<period>
+					<!-- ## Time Resource Allocated (ADS38) ## -->
+					<start value="2020-06-29T15:36:44+00:00"/>
+					<!--## Time Clear (ADS45) ## -->
+					<end value="2020-06-30T15:36:44+00:00"/>
+				</period>
+				<!-- Reference to the Ambulance resource that provided the care. -->
+				<location>
+					<location>
+						<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+					</location>
+					<physicalType>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<code value="ve"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!-- Third Encounter entry. This encounter covers callsign YAS456 attending to NHS Number 9988776655, who is conveyed to RR807. -->
+	<entry>
+		<fullUrl value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
+		<resource>
+			<Encounter>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
+				</meta>
+				<!-- ## Time Resource Mobilised (ADS39) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-mobilised"/>
+								<display value="Time Resource Mobilised"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-resource-arrived-on-scene"/>
+								<display value="Time Resource Arrived On Scene"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-arrived-receiving-location"/>
+								<display value="Time Arrived at Receiving Location"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T16:07:54+00:00"/>
+					</extension>
+				</extension>
+				<!-- ## Time of Patient Handover (ADS44) ## -->
+				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+					<extension url="dateTimeType">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<code value="time-patient-handover"/>
+								<display value="Time Patient Handover"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="dateTime">
+						<valueDateTime value="2020-06-29T15:06:03+00:00"/>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="393c3471-3339-463f-b431-d4fa3f62c313"/>
+				</identifier>
+				<status value="finished"/>
+				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
+				<class>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+					<code value="AMBT"/>
+					<display value="ambulance transport"/>
+				</class>
+				<!-- Reference to the Patient entry. -->
+				<subject>
+					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+				</subject>
+				<basedOn>
+					<reference value="urn:uuid:c40eb149-ee06-4be3-abe6-e1c458efa55e"/>
+				</basedOn>
+				<!--PractitionerRoleLink to the PractitionerRole that has the highest skill level-->
+				<participant>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+							<code value="ATND"/>
+							<display value="Attender"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:0d743079-780c-40f3-8a52-be15f746b484"/>
+					</individual>
+				</participant>
+				<period>
+					<!-- ## Time Resource Allocated (ADS38) ## -->
+					<start value="2020-06-29T15:42:03+00:00"/>
+					<!--## Time Clear (ADS45) ## -->
+					<end value="2020-06-29T18:01:06+00:00"/>
+				</period>
+				<hospitalization>
+					<!-- Reference to Receiving Location entry. -->
+					<destination>
+						<reference value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+					</destination>
+				</hospitalization>
+				<!-- Reference to the Ambulance resource that provided the care. -->
+				<location>
+					<location>
+						<reference value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+					</location>
+					<physicalType>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+							<code value="ve"/>
+							<display value="Vehicle"/>
+						</coding>
+					</physicalType>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!-- First Patient entry. -->
+	<entry>
+		<fullUrl value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<!-- ## Patient ethnicity EPR (ADS58) ## -->
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
+							<code value="A"/>
+							<display value="British, Mixed British"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<identifier>
+					<!-- Extended patient section for NHSNumberVerificationStatus -->
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="NoInformation"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!-- ## NHS Number (ADS59) ##  -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9912003888"/>
+				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="ABC1234567"/>
+				</identifier>
+				<!-- ## Patient name EPR (ADS54) ## -->
+				<!--structured name-->
+				<name>
+					<use value="usual"/>
+					<family value="CHALMERS"/>
+					<given value="Peter"/>
+				</name>
+				<!--unstructured name-->
+				<name>
+					<use value="usual"/>
+					<text value="Peter Chalmers"/>
+				</name>
+				<!-- ## Patient gender EPR (ADS57) ## -->
+				<gender value="male"/>
+				<!-- ## Dateof birth (ADS55) ## -->
+				<birthDate value="1963-08-08"/>
+				<!-- ## Patient address postcode EPR (ADS5) ## -->
+				<address>
+					<postalCode value="LS6 7QR"/>
+				</address>
+				<!-- ## Registered GP Practice EPR (ADS53) ## -->
+				<generalPractitioner>
+					<identifier>
+						<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+						<value value="GP123"/>
+					</identifier>
+				</generalPractitioner>
+			</Patient>
+		</resource>
+	</entry>
+	<!-- patient's approximate age-->
+	<entry>
+		<fullUrl value="urn:uuid:a3ebb1f1-a5c3-46a3-bc93-c52e660682f1"/>
+		<resource>
+			<Observation>
+				<!--code element will always be as shown-->
+				<code>
+					<coding>
+						<code value="102519007"/>
+						<display value="http://snomed.info/sct"/>
+						<system value="Apparent age"/>
+					</coding>
+				</code>
+				<!--MUST be linked to a subject-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!-- ## Patient approximate age EPR (ADS56) ## -->
+				<valueQuantity>
+					<value value="38"/>
+					<unit value="Year"/>
+					<code value="a"/>
+					<system value="http://unitsofmeasure.org"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<!-- Second Patient entry. -->
+	<entry>
+		<fullUrl value="urn:uuid:02bbfef1-39c3-4e3a-a4fc-4d48aec395b0"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
+							<code value="B"/>
+							<display value="Irish"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<identifier>
+					<!-- Extended patient section for NHSNumberVerificationStatus -->
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="NoInformation"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!-- ## NHS Number (ADS59) ##  -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="2233445566"/>
+				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="DEF1234567"/>
+				</identifier>
+				<!-- ## Patient name EPR (ADS54) ## -->
+				<name>
+					<use value="usual"/>
+					<family value="PETERS"/>
+					<given value="Mary"/>
+				</name>
+				<!-- ## Patient gender EPR (ADS57) ## -->
+				<gender value="female"/>
+				<!-- ## Date of Birth (ADS55) ## -->
+				<birthDate value="1970-09-04"/>
+				<!-- ## Patient address postcode EPR (ADS52) ## -->
+				<address>
+					<postalCode value="LS16 5BH"/>
+				</address>
+			</Patient>
+		</resource>
+	</entry>
+	<!-- Third Patient entry. -->
+	<entry>
+		<fullUrl value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+		<resource>
+			<Patient>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+				</meta>
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory"/>
+							<code value="D"/>
+							<display value="White and Black Caribbean"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<identifier>
+					<!-- Extended patient section for NHSNumberVerificationStatus -->
+					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+						<valueCodeableConcept>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+								<code value="NI"/>
+								<display value="NoInformation"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<!-- ## NHS Number (ADS59) ##  -->
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9988776655"/>
+				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="GHI1234567"/>
+				</identifier>
+				<!-- ## Patient name EPR (ADS54) ## -->
+				<name>
+					<use value="usual"/>
+					<family value="SMITH"/>
+					<given value="Colin"/>
+				</name>
+				<!-- ## Patient gender EPR (ADS57) ## -->
+				<gender value="unknown"/>
+				<!-- ## Date of Birth (ADS55) ## -->
+				<birthDate value="2002-12-08"/>
+				<!-- ## Patient address postcode EPR (ADS52) ## -->
+				<address>
+					<postalCode value="LS4 2WE"/>
+				</address>
+			</Patient>
+		</resource>
+	</entry>
+	<!-- Ambulance Response Vehicle Location entry for YAS123 -->
+	<entry>
+		<fullUrl value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
+				</meta>
+				<!-- ## Call Sign (ADS36) ## -->
+				<identifier>
+					<system value="https://RX8/Id/call-sign"/>
+					<value value="YAS123"/>
+				</identifier>
+				<mode value="kind"/>
+				<!-- ## Response Type (ADS34) ## -->
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseType"/>
+						<code value="01"/>
+						<display value="DCA: Double Crewed Ambulance (Emergency)"/>
+					</coding>
+				</type>
+				<!-- Reference to the organisation managing the response. -->
+				<managingOrganization>
+					<reference value="urn:uuid:343b74f7-2b8c-4659-ae76-70ee8d7161f7"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<!-- ## Highest Skill Level on Vehicle for Ambulance Response Vehicle Location YAS123 ## -->
+	<entry>
+		<fullUrl value="urn:uuid:6b6cb092-6af5-4154-8d99-002614ec444e"/>
+		<resource>
+			<PractitionerRole>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-PractitionerRole"/>
+				</meta>
+				<!-- ## Highest Skill Level on Vehicle (ADS35) ## -->
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+						<code value="03"/>
+						<display value="Registered Clinician"/>
+					</coding>
+				</code>
+				<location>
+					<reference value="urn:uuid:52e9d37a-a40d-11ea-bb37-0242ac130002"/>
+				</location>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<!-- Ambulance Response Vehicle Location entry for YAS456-->
+	<entry>
+		<fullUrl value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+		<resource>
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AmbulanceResponseVehicle-Location"/>
+				</meta>
+				<!-- ## Call Sign (ADS36) ## -->
+				<identifier>
+					<system value="https://RX8/Id/call-sign"/>
+					<value value="YAS456"/>
+				</identifier>
+				<mode value="kind"/>
+				<!-- ## Response Type (ADS34) ## -->
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ResponseType"/>
+						<code value="01"/>
+						<display value="DCA: Double Crewed Ambulance (Emergency)"/>
+					</coding>
+				</type>
+				<!-- Reference to the organisation managing the response. -->
+				<managingOrganization>
+					<reference value="urn:uuid:343b74f7-2b8c-4659-ae76-70ee8d7161f7"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<!-- ## Highest Skill Level on Vehicle for Ambulance Response Vehicle Location YAS456 ## -->
+	<entry>
+		<fullUrl value="urn:uuid:0d743079-780c-40f3-8a52-be15f746b484"/>
+		<resource>
+			<PractitionerRole>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-PractitionerRole"/>
+				</meta>
+				<!-- ## Highest Skill Level on Vehicle (ADS35) ## -->
+				<code>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+						<code value="03"/>
+						<display value="Registered Clinician"/>
+					</coding>
+				</code>
+				<location>
+					<reference value="urn:uuid:f8f36dd8-c01c-4ea5-824d-7f53e98800dd"/>
+				</location>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<!-- Organisation entry for organisation managing the response. -->
+	<entry>
+		<fullUrl value="urn:uuid:343b74f7-2b8c-4659-ae76-70ee8d7161f7"/>
+		<resource>
+			<Organization>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Responding-Organization"/>
+				</meta>
+				<identifier>
+					<use value="official"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RX8"/>
+				</identifier>
+				<!-- ## Responding organisation type (ADS37) ## -->
+				<type>
+					<coding>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-RespondingOrganisationType"/>
+						<code value="01"/>
+						<display value="NHS Ambulance Service"/>
+					</coding>
+				</type>
+			</Organization>
+		</resource>
+	</entry>
+	<!-- Receiving Location entry. -->
+	<entry>
+		<fullUrl value="urn:uuid:2003ffd2-9f42-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Location>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Receiving-Location"/>
+				</meta>
+				<!-- ## Receiving Destination Site Code (CAD) (ADS94A) ## -->
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="RR807"/>
+				</identifier>
+				<type>
+					<coding>
+						<!-- ## Receiving Location Type (CAD) (ADS93A) ## -->
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocationCAD"/>
+						<code value="UCC"/>
+						<display value="Urgent Care Centre"/>
+					</coding>
+				</type>
+			</Location>
+		</resource>
+	</entry>
+	<!-- Organization entry for Submitting and Provider Organisation Code -->
+	<entry>
+		<fullUrl value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
+		<resource>
+			<Organization>
+				<meta>
+					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
+				</meta>
+				<!-- ## Submitting Organisation Code (ADS0) ## -->
+				<!-- ## Provider Organisation Code (ADS1) ## -->
+				<identifier>
+					<use value="official"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RR8"/>
+				</identifier>
+			</Organization>
+		</resource>
+	</entry>
+	<!--AMPDS Triage Disposition (ADS16)-->
+	<entry>
+		<fullUrl value="urn:uuid:0dabe91e-f1c9-4a55-8231-ed7453f29a8b"/>
+		<resource>
+			<Observation>
+				<id value="0dabe91e-f1c9-4a55-8231-ed7453f29a8b"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS16)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="01"/>
+						<display value="AMPDS Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the AMPDSTriageDisposition-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
+						<system value="1A01"/>
+						<display value="Abdominal pain"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--AMPDS Triage Disposition (ADS17-->
+	<entry>
+		<fullUrl value="urn:uuid:bf1533f8-309a-4737-b485-73291eb912a8"/>
+		<resource>
+			<Observation>
+				<id value="bf1533f8-309a-4737-b485-73291eb912a8"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS17)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="02"/>
+						<display value="Pathways Triage Disposition"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the ADS-TriageCategory-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
+						<system value="DG10"/>
+						<display value="Ambulance request"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--AMPDS Triage Disposition (ADS18)-->
+	<entry>
+		<fullUrl value="urn:uuid:bf5ce3ef-65ab-464b-8f32-6c6e059b7e4e"/>
+		<resource>
+			<Observation>
+				<id value="bf5ce3ef-65ab-464b-8f32-6c6e059b7e4e"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="03"/>
+						<display value="SG Code (Symptom Group)"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the SGCodeSymptomGroup-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
+						<system value="SG9"/>
+						<display value="Symptom group display"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--AMPDS Triage Disposition (ADS19)-->
+	<entry>
+		<fullUrl value="urn:uuid:bcd5a787-7359-49f8-8412-2790ab47c8fd"/>
+		<resource>
+			<Observation>
+				<id value="bcd5a787-7359-49f8-8412-2790ab47c8fd"/>
+				<status value="final"/>
+				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
+				<code>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<system value="04"/>
+						<display value="SD Code (Symptom Discriminator)"/>
+					</coding>
+				</code>
+				<focus>
+					<!--the focus is the communication resource-->
+					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
+				</focus>
+				<!--the value for the SGCodeSymptomGroup-->
+				<valueCodeableConcept>
+					<coding>
+						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+						<system value="SD6"/>
+						<display value="Symptom Discriminator display"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!-- ## Patient response QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:83441015-1844-4bae-881d-2c7808d632dc"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-PatientResponseDetails-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## CFR Utilisation Flag (Community First Responder) EPR (ADS48) ## -->
+				<item>
+					<linkId value="ADS48"/>
+					<answer>
+						<valueCoding>
+							<code value="Y"/>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Bystander CPR Started Flag EPR (ADS49) ## -->
+				<item>
+					<linkId value="ADS49"/>
+					<answer>
+						<valueCoding>
+							<code value="N"/>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Time Bystander CPR started (ADS50) ## -->
+				<item>
+					<linkId value="ADS50"/>
+					<answer>
+						<valueDateTime value="2020-06-29T14:45:32+00:00"/>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Patient information QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:2fa49410-fb2e-4441-a6aa-f9ba9bc0efc0"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-PatientInformationDetails-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## Spoken Language (SNOMED CT)	 EPR (ADS62) ## -->
+				<item>
+					<linkId value="ADS62"/>
+					<answer>
+						<valueCoding>
+							<code value="315570003"/>
+							<display value="Main spoken language English"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Accessible information professional required EPR (ADS63) ## -->
+				<item>
+					<linkId value="ADS63"/>
+					<answer>
+						<valueCoding>
+							<code value="966401000000100"/>
+							<display value="Requires speech to text reporter"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Pregnancy Status EPR (ADS64) ## -->
+				<item>
+					<linkId value="ADS64"/>
+					<answer>
+						<valueCoding>
+							<code value="02"/>
+							<display value="Not Pregnant"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PregnancyStatus"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Accommodation Status (SNOMED CT) EPR (ADS66) ## -->
+				<item>
+					<linkId value="ADS66"/>
+					<answer>
+						<valueCoding>
+							<code value="414418009"/>
+							<display value="Housed"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Mental Health Legal Class EPR (ADS67) ## -->
+				<item>
+					<linkId value="ADS67"/>
+					<answer>
+						<valueCoding>
+							<code value="32"/>
+							<display value="Formally detained under other acts"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-MentalHealthLegalClass"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Injury informmation QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:a75a94ef-bfa0-4b92-bdfe-efc75015699b"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-InjuryInformation-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:02bbfef1-39c3-4e3a-a4fc-4d48aec395b0"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:9450d479-328c-4c3c-bf35-efb1d80bd576"/>
+				</encounter>
+				<!-- ## Injury Date / Time Occurred EPR (ADS68) ## -->
+				<item>
+					<linkId value="ADS68"/>
+					<answer>
+						<valueDateTime value="2020-06-29T14:40:32+00:00"/>
+					</answer>
+				</item>
+				<!-- ## 	Location patient injury occurred (SNOMED CT) EPR (ADS69) ## -->
+				<item>
+					<linkId value="ADS69"/>
+					<answer>
+						<valueCoding>
+							<code value="48979004"/>
+							<display value="Left lower leg"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Injury Intent (SNOMED CT) (SNOMED CT) EPR (ADS70) ## -->
+				<item>
+					<linkId value="ADS70"/>
+					<answer>
+						<valueCoding>
+							<code value="242651001"/>
+							<display value="Injury caused by animal"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Injury Activity Status (SNOMED CT) (ADS71) EPR ## -->
+				<item>
+					<linkId value="ADS71"/>
+					<answer>
+						<valueCoding>
+							<code value="1067601000000108"/>
+							<display value="Leisure"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Injury Mechanism (SNOMED CT) (ADS72) EPR ## -->
+				<item>
+					<linkId value="ADS72"/>
+					<answer>
+						<valueCoding>
+							<code value="283734005"/>
+							<display value="Injury from dog"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Patient assessment QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:1c1caef1-7ff6-49a4-96cd-07a95e326702"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-PatientAssessmentDetails-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## 	Comorbidity (SNOMED CT) EPR (ADS73) ## You can have multiple of these -->
+				<item>
+					<linkId value="ADS73"/>
+					<answer>
+						<valueCoding>
+							<code value="361055000"/>
+							<display value="Misuses drugs"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<item>
+					<linkId value="ADS73"/>
+					<answer>
+						<valueCoding>
+							<code value="87486003"/>
+							<display value="Aphasia"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Investigation (SNOMED (CT) EPR (ADS75) ## -->
+				<item>
+					<linkId value="ADS75"/>
+					<answer>
+						<valueCoding>
+							<code value="312882009"/>
+							<display value="Taking nasal swab"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<item>
+					<linkId value="ADS75"/>
+					<answer>
+						<valueCoding>
+							<code value="312880001"/>
+							<display value="Taking throat swab"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Treatment (SNOMED CT) EPR (ADS78) ## -->
+				<item>
+					<linkId value="ADS78"/>
+					<answer>
+						<valueCoding>
+							<code value="225692006"/>
+							<display value="Applying eye pad and bandage"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Chief Complaint EPR (ADS79A) ## -->
+				<item>
+					<linkId value="ADS79A"/>
+					<answer>
+						<valueCoding>
+							<code value="398979000"/>
+							<display value="Pale colour"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Initial Acuity (SNOMED CT) EPR (ADS79B) ## -->
+				<item>
+					<linkId value="ADS79B"/>
+					<answer>
+						<valueCoding>
+							<code value="451005009"/>
+							<display value="Application of elastic support bandage"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Screening Tool EPR (ADS82) ## -->
+				<item>
+					<linkId value="ADS82"/>
+					<answer>
+						<valueCoding>
+							<code value="WELL"/>
+							<display value="Wells score (PE &amp; DVT)"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ScreeningTool"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Clinical Triage Tool EPR (ADS83) ## -->
+				<item>
+					<linkId value="ADS83"/>
+					<answer>
+						<valueCoding>
+							<code value="MTSFTF"/>
+							<display value="Manchester Triage System - Face-to-Face"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ClinicalTriageTool"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Existing Treatment Plans EPR (ADS84) ## -->
+				<item>
+					<linkId value="ADS84"/>
+					<answer>
+						<valueCoding>
+							<code value="02"/>
+							<display value="EOL"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ExistingTreatmentPlans"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<item>
+					<linkId value="ADS84"/>
+					<answer>
+						<valueCoding>
+							<code value="08"/>
+							<display value="Social Care"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ExistingTreatmentPlans"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!--Medication data items-->
+	<!--there may be many of these - each medication administration will be a seperate resource-->
+	<entry>
+		<fullUrl value="urn:uuid:2cbcc5a0-6357-4e9a-93ab-063aeadca024"/>
+		<resource>
+			<MedicationAdministration>
+				<!--this is mandatory & fixed to completed-->
+				<status value="completed"/>
+				<!-- ## Medication Administered (ADS85A) EPR ## -->
+				<medicationCodeableConcept>
+					<coding>
+						<code value="17648211000001109"/>
+						<display value="Morphine 2% gel"/>
+						<system value="http://snomed.info/sct"/>
+					</coding>
+				</medicationCodeableConcept>
+				<!--MUST have a patient link-->
+				<subject>
+					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+				</subject>
+				<!--MUST have an encounter link-->
+				<context>
+					<reference value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
+				</context>
+				<!--Mandated element-->
+				<effectiveDateTime value="2020-06-29T15:10:32+00:00"/>
+				<dosage>
+					<!-- ## Medication route (ADS85B) EPR ## -->
+					<route>
+						<coding>
+							<code value="067"/>
+							<display value="Sublingual"/>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-MedicationAdministrationRoute"/>
+						</coding>
+					</route>
+				</dosage>
+			</MedicationAdministration>
+		</resource>
+	</entry>
+	<!--NEWS2 scores-->
+	<!--there may be many of these - each NEWS2 will be a seperate resource-->
+	<entry>
+		<fullUrl value="urn:uuid:a964684b-7d16-4b0a-82df-97ad344b6845"/>
+		<resource>
+			<!--this example shows an overall NEWS2 score only-->
+			<Observation>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="survey"/>
+						<display value="Survey"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="1104051000000101"/>
+						<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) total score"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+				</subject>
+				<!-- ## 	NEWS2 Score Date and Time EPR (ADS80) ## -->
+				<effectiveDateTime value="2020-06-29T15:30:32+00:00"/>
+				<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+				<valueQuantity>
+					<value value="6"/>
+					<unit value="ScoreOf"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="{ScoreOf}"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a964684b-7d16-4b0a-82df-97ad344b6845"/>
+		<resource>
+			<!--this example shows an overall NEWS2 score and associated sub-scores-->
+			<Observation>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="survey"/>
+						<display value="Survey"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="1104051000000101"/>
+						<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) total score"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
+				</subject>
+				<!-- ## 	NEWS2 Score Date and Time EPR (ADS80) ## -->
+				<effectiveDateTime value="2020-06-29T15:30:32+00:00"/>
+				<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+				<valueQuantity>
+					<value value="6"/>
+					<unit value="ScoreOf"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="{ScoreOf}"/>
+				</valueQuantity>
+				<!-- Respiratory Rate Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104301000000104"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - respiration rate score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="2"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+				<!-- Pulse Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104351000000103"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - pulse score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="1"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="score"/>
+					</valueQuantity>
+				</component>
+				<!-- Oxygen Saturation scale 1 Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104311000000102"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - oxygen saturation scale 1 score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="2"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+				<!-- Air or Oxygen Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104331000000105"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - air or oxygen score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="0"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+				<!-- Temperature Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104371000000107"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - temperature score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="1"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+				<!-- Systolic Blood Pressure Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104341000000101"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - systolic blood pressure score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="0"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+				<!--  Consciousness Sub-Score -->
+				<component>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1104361000000100"/>
+							<display value="Royal College of Physicians NEWS2 (National Early Warning Score 2) - consciousness score"/>
+						</coding>
+					</code>
+					<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
+					<valueQuantity>
+						<value value="0"/>
+						<unit value="ScoreOf"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="{ScoreOf}"/>
+					</valueQuantity>
+				</component>
+			</Observation>
+		</resource>
+	</entry>
+	<!-- ## Frailty Score QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:1c1caef1-7ff6-49a4-96cd-07a95e326702"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-FrailtyScoreDetails-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## 	Frailty Score EPR (ADS81) -->
+				<item>
+					<linkId value="ADS81"/>
+					<answer>
+						<valueCoding>
+							<code value="1129351000000108"/>
+							<display value="Clinical Frailty Scale level 3 - managing well"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!--Diagnosis data items-->
+	<!--Diagnosis data items are in a List, ordered by priority-->
+	<entry>
+		<fullUrl value="urn:uuid:665b7733-0c15-4682-bbb1-3fa9ffcbd9b1"/>
+		<resource>
+			<List>
+				<status value="current"/>
+				<mode value="snapshot"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="887161000000102"/>
+						<display value="Diagnoses"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<orderedBy>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/list-order"/>
+						<code value="priority "/>
+						<display value="Sorted by Priority"/>
+					</coding>
+				</orderedBy>
+				<entry>
+					<item>
+						<reference value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
+					</item>
+					<item>
+						<reference value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
+					</item>
+				</entry>
+			</List>
+		</resource>
+	</entry>
+	<entry>
+		<fulUrl value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
+		<resource>
+			<Condition>
+				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
+				<verificationStatus>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+						<code value="unconfirmed"/>
+						<display value="Unconfirmed"/>
+					</coding>
+				</verificationStatus>
+				<!-- ## Final Acuity (SNOMED CT) EPR (ADS79C) ## -->
+				<severity>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="24484000"/>
+						<display value="Severe"/>
+					</coding>
+				</severity>
+				<!-- ## Suspected Diagnosis (SNOMED CT) EPR (ADS77) ## -->
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="812751000000104"/>
+						<display value="Injury of muscle of lower leg (disorder)"/>
+					</coding>
+				</code>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## 	Main Symptom (SNOMED CT) (ADS74) ## -->
+				<evidence>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="162784002"/>
+							<display value="Swollen leg (single)"/>
+						</coding>
+					</code>
+				</evidence>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fulUrl value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
+		<resource>
+			<Condition>
+				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
+				<verificationStatus>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+						<code value="confirmed"/>
+						<display value="Confirmed"/>
+					</coding>
+				</verificationStatus>
+				<!-- ## Final Acuity (SNOMED CT) EPR (ADS79C) ## -->
+				<severity>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="24484000"/>
+						<display value="Severe"/>
+					</coding>
+				</severity>
+				<!-- ## Suspected Diagnosis (SNOMED CT) EPR (ADS77) ## -->
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="80313002"/>
+						<display value="Palpitations"/>
+					</coding>
+				</code>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## 	Main Symptom (SNOMED CT) (ADS74) ## -->
+				<evidence>
+					<code>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="80313002"/>
+							<display value="Palpitations"/>
+						</coding>
+					</code>
+				</evidence>
+			</Condition>
+		</resource>
+	</entry>
+	<!-- ## Clinical response QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:81cbaaca-7272-441c-a7f6-82ecebd7a1d2"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-ClinicalResponse-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## Highest Skill level in attendance EPR (ADS86) ## -->
+				<item>
+					<linkId value="ADS86"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+							<code value="03"/>
+							<display value="Registered Clinician"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Clinical Decision Maker (ADS103) ## -->
+				<item>
+					<linkId value="ADS103"/>
+					<answer>
+						<valueCoding>
+							<code value="03"/>
+							<display value="Face-to-Face Registered Clinician"/>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalDecisionMaker"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	Discharging Clinician skill level (ADS88) ## -->
+				<item>
+					<linkId value="ADS88"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalSkillLevel"/>
+							<code value="04"/>
+							<display value="Registered Clinician working at Clinical Speciality and/or Supervisory Level"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Episode outcome QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per patient)-->
+	<entry>
+		<fullUrl value="urn:uuid:81cbaaca-7272-441c-a7f6-82ecebd7a1d2"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-EpisodeOutcome-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## DoS Usage EPR (ADS89) ## -->
+				<item>
+					<linkId value="ADS89"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-DoSUsage"/>
+							<code value="02"/>
+							<display value="DoS/Service Finder Used - Referred to alternative pathway to ED"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Treatment Status (SNOMED CT) (ADS90) ## -->
+				<item>
+					<linkId value="ADS90"/>
+					<answer>
+						<valueCoding>
+							<code value="02"/>
+							<display value="Treatment incomplete : refusal of care"/>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-TreatmentStatus"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## On scene discharge Follow Up (SNOMED CT) (ADS91) ## -->
+				<item>
+					<linkId value="ADS91"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-DischargeFollowup"/>
+							<code value="08"/>
+							<display value="Emergency Department"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Alternative Pathway ( if not available via ADS89) (ADS102) ## -->
+				<item>
+					<linkId value="ADS102"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-AlternativePathway"/>
+							<code value="05"/>
+							<display value="Urgent treatment centre"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## See and Convey Episode Outcome QuestionnaireResponse EPR ## -->
+	<!--there may be many of these (one per encounter)-->
+	<entry>
+		<fullUrl value="urn:uuid:7106114d-b96f-4f18-9e90-bf899afc9eb8"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-SeeAndConveyEpisodeOutcome-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## 	Pre-Alert Status EPR (ADS92) -->
+				<item>
+					<linkId value="ADS92"/>
+					<answer>
+						<valueCoding>
+							<code value="02"/>
+							<display value="Pre-alert not required"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PreAlertStatus"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Pre-Alert StatusTime stamp EPR (ADS92A) ##-->
+				<item>
+					<linkId value="ADS92A"/>
+					<answer>
+						<valueDateTime value="2020-06-29T15:55:32+00:00"/>
+					</answer>
+				</item>
+				<!-- ## 	Receiving Location Type (CAD) EPR (ADS93A) ## -->
+				<item>
+					<linkId value="ADS93A"/>
+					<answer>
+						<valueCoding>
+							<code value="05"/>
+							<display value="Urgent treatment centre"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ReceivingLocation"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Conveying Destination Type (EPR) (SNOMED CT) (ADS93B)  ## -->
+				<item>
+					<linkId value="ADS93B"/>
+					<answer>
+						<valueCoding>
+							<code value="73770003"/>
+							<display value="Hospital-based outpatient emergency care center"/>
+							<system value="http://snomed.info/sct"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Receiving Location Site Code  (CAD) (ADS94A)  ## -->
+				<item>
+					<linkId value="ADS94A"/>
+					<answer>
+						<valueReference>
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+								<value value="RR807"/>
+							</identifier>
+						</valueReference>
+					</answer>
+				</item>
+				<!-- ## Conveying Destination Site Code (EPR) (ADS94B)  ## -->
+				<item>
+					<linkId value="ADS94B"/>
+					<answer>
+						<valueReference>
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+								<value value="RX8"/>
+							</identifier>
+						</valueReference>
+					</answer>
+				</item>
+				<!-- ## Time of Clinical Handover EPR (ADS95) ##-->
+				<item>
+					<linkId value="ADS95"/>
+					<answer>
+						<valueDateTime value="2020-06-29T16:35:32+00:00"/>
+					</answer>
+				</item>
+				<!-- ## 	Receiving Location Type (CAD) EPR (ADS96) ## -->
+				<item>
+					<linkId value="ADS96"/>
+					<answer>
+						<valueCoding>
+							<code value="03"/>
+							<display value="No cubicle / isolation capacity"/>
+							<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-HandoverDelayDetail"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Safeguarding QuestionnaireResponse EPR ## -->
+	<entry>
+		<fullUrl value="urn:uuid:9c4d3ddb-4ece-4627-855a-06829a898a71"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-Safeguarding-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## Safeguarding concern  (SNOMED CT) (ADS97) ## -->
+				<item>
+					<linkId value="ADS97"/>
+					<answer>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="736792008"/>
+							<display value="At risk of honour based violence"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Safeguarding Referral (ADSADS98) ## -->
+				<item>
+					<linkId value="ADS98"/>
+					<answer>
+						<valueCoding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+							<code value="Y"/>
+							<display value="Yes"/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<!-- ## Public health QuestionnaireResponse EPR ## -->
+	<entry>
+		<fullUrl value="urn:uuid:81cbaaca-7272-441c-a7f6-82ecebd7a1d2"/>
+		<resource>
+			<QuestionnaireResponse>
+				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-PublicHealth-Questionnaire"/>
+				<status value="completed"/>
+				<!--MUST link to a Patient-->
+				<subject>
+					<reference value="urn:uuid:b6256eda-a021-11ea-bb37-0242ac130002"/>
+				</subject>
+				<!--MUST link to an Encounter-->
+				<encounter>
+					<reference value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
+				</encounter>
+				<!-- ## Disease Outbreak Notification (ADS100) ## -->
+				<item>
+					<linkId value="ADS100"/>
+					<answer>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="443684005"/>
+							<display value="Disease outbreak"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Notifiable Disease (ADS100A) ## -->
+				<item>
+					<linkId value="ADS100A"/>
+					<answer>
+						<valueCoding>
+							<system value="http://snomed.info/sct"/>
+							<code value="409498004"/>
+							<display value="Anthrax"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## 	MECC intervention outcome (ADS99) ## -->
+				<item>
+					<linkId value="ADS99"/>
+					<answer>
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-MCCInterventionOutcome"/>
+							<code value="02"/>
+							<display value="Patient refused MECC intervention or advice"/>
+						</valueCoding>
+					</answer>
+				</item>
+				<!-- ## Research (ADS101) ## -->
+				<item>
+					<linkId value="ADS101"/>
+					<answer>
+						<valueCoding>
+							<system value=""/>
+							<code value=""/>
+							<display value=""/>
+						</valueCoding>
+					</answer>
+				</item>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+</Bundle>
