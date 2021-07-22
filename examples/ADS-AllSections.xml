@@ -1533,6 +1533,10 @@
 							<system value="https://fhir.nhs.uk/CodeSystem/Ambulance-MedicationAdministrationRoute"/>
 						</coding>
 					</route>
+					<dose>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+						<code value="UNK"/>
+					</dose>
 				</dosage>
 			</MedicationAdministration>
 		</resource>
@@ -1786,6 +1790,8 @@
 					<item>
 						<reference value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
 					</item>
+				</entry>
+				<entry>
 					<item>
 						<reference value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
 					</item>
@@ -1794,7 +1800,7 @@
 		</resource>
 	</entry>
 	<entry>
-		<fulUrl value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
+		<fullUrl value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
 		<resource>
 			<Condition>
 				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
@@ -1843,7 +1849,7 @@
 		</resource>
 	</entry>
 	<entry>
-		<fulUrl value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
+		<fullUrl value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
 		<resource>
 			<Condition>
 				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
