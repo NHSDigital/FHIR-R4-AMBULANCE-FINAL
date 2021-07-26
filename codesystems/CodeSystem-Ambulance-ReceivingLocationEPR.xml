@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ReceivingLocationEPR"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ReceivingLocationEPR"/>
+	<version value="1.0.0"/>
+	<name value="CodeSystem-AmbulanceReceivingLocationEPR"/>
+	<title value="CodeSystem Ambulance ReceivingLocationEPR"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify a ReceivingLocationEPR type"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Emergency department"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Same day emergency care"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Frailty service"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Rapid access hot clinics"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Urgent treatment centre"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Primary care service (in hours)"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Primary care service (out of hours / hub)"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Medical assessment unit"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Surgical assessment unit"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Maternity unit (&gt;20/40) "/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Gynaecology (inc. &lt;20/40)"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Mental health assessment unit / place of safety"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Paediatric assessment unit"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Oncology assessment unit"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="Renal assessment unit"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="Direct Ward Admission"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="Major Trauma Service"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="Cardiac angioplasty service"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="Acute stroke service"/>
+	</concept>
+	<concept>
+		<code value="20"/>
+		<display value="Intensive care unit"/>
+	</concept>
+	<concept>
+		<code value="21"/>
+		<display value="Intensive care unit (paediatric)"/>
+	</concept>
+	<concept>
+		<code value="22"/>
+		<display value="Burns service"/>
+	</concept>
+	<concept>
+		<code value="23"/>
+		<display value="Spinal injury service"/>
+	</concept>
+	<concept>
+		<code value="24"/>
+		<display value="Liver transplant unit"/>
+	</concept>
+	<concept>
+		<code value="25"/>
+		<display value="ECMO Unit"/>
+	</concept>
+	<concept>
+		<code value="26"/>
+		<display value="Hyperbaric medicine service"/>
+	</concept>
+	<concept>
+		<code value="27"/>
+		<display value="Infectious diseases unit"/>
+	</concept>
+	<concept>
+		<code value="28"/>
+		<display value="Mental health facility"/>
+	</concept>
+	<concept>
+		<code value="29"/>
+		<display value="Hospice"/>
+	</concept>
+	<concept>
+		<code value="30"/>
+		<display value="Intermediate care facility"/>
+	</concept>
+	<concept>
+		<code value="31"/>
+		<display value="Alcohol dependency assessment / treatment unit"/>
+	</concept>
+	<concept>
+		<code value="32"/>
+		<display value="Bariatric living space"/>
+	</concept>
+	<concept>
+		<code value="33"/>
+		<display value="Respiratory Service"/>
+	</concept>
+	<concept>
+		<code value="34"/>
+		<display value="Sexual Assault Referral Centre"/>
+	</concept>
+	<concept>
+		<code value="35"/>
+		<display value="Community residential mental health service"/>
+	</concept>
+	<concept>
+		<code value="36"/>
+		<display value="Homeless shelter"/>
+	</concept>
+	<concept>
+		<code value="37"/>
+		<display value="Refused transport "/>
+	</concept>
+	<concept>
+		<code value="38"/>
+		<display value="Home"/>
+	</concept>
+	<concept>
+		<code value="39"/>
+		<display value="Residential care facility without 24 hour nursing care (e.g. residential home)"/>
+	</concept>
+	<concept>
+		<code value="40"/>
+		<display value="Residential care facility with 24 hour nursing care (e.g. nursing home)"/>
+	</concept>
+	<concept>
+		<code value="41"/>
+		<display value="Police custody"/>
+	</concept>
+	<concept>
+		<code value="42"/>
+		<display value="Custodial services e.g. prison / detention centre"/>
+	</concept>
+	<concept>
+		<code value="43"/>
+		<display value="Helipad"/>
+	</concept>
+	<concept>
+		<code value="44"/>
+		<display value="Event medical facility"/>
+	</concept>
+	<concept>
+		<code value="45"/>
+		<display value="Hospital Mortuary"/>
+	</concept>
+	<concept>
+		<code value="46"/>
+		<display value="City or Regional Mortuary"/>
+	</concept>
+	<concept>
+		<code value="47"/>
+		<display value="Incident Mortuary"/>
+	</concept>
+</CodeSystem>

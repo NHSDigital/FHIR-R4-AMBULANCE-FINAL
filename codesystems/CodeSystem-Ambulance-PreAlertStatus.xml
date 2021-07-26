@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-PreAlertStatus"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-PreAlertStatus"/>
+	<version value="1.0.0"/>
+	<name value="CodeSystem-AmbulancePreAlertStatus"/>
+	<title value="CodeSystem Ambulance Pre-Alert Status"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify a Pre-Alert Status"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Pre-Alert activated"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Pre-alert not required"/>
+	</concept>
+</CodeSystem>

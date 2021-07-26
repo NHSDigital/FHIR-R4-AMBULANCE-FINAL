@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ClinicalTriageTool"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ClinicalTriageTool"/>
+	<version value="1.0.0"/>
+	<name value="CodeSystem-AmbulanceClinicalTriageTool"/>
+	<title value="CodeSystem Ambulance Clinical Triage Tool"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the Clinical Triage Tool used"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="MTSFTF"/>
+		<display value="Manchester Triage System - Face-to-Face"/>
+	</concept>
+	<concept>
+		<code value="MTSTEL"/>
+		<display value="Manchester Triage System - via Telephone / Remote Triage"/>
+	</concept>
+	<concept>
+		<code value="PPFMED"/>
+		<display value="Paramedic Pathfinder - Medical"/>
+	</concept>
+	<concept>
+		<code value="PPFTRA"/>
+		<display value="Paramedic Pathfinder - Trauma"/>
+	</concept>
+	<concept>
+		<code value="MTPPF"/>
+		<display value="Major Trauma Pathfinder / Pathway"/>
+	</concept>
+	<concept>
+		<code value="MCTS"/>
+		<display value="Mass Casualty Triage Sieve"/>
+	</concept>
+	<concept>
+		<code value="NART"/>
+		<display value="NaRT - Nursing &amp; Residential Triage Tool"/>
+	</concept>
+	<concept>
+		<code value="ODYS"/>
+		<display value="Odyssey"/>
+	</concept>
+	<concept>
+		<code value="LAAT"/>
+		<display value="Low Acuity &amp; Triage / ECN (AMPDS)"/>
+	</concept>
+	<concept>
+		<code value="NHSP"/>
+		<display value="NHS Pathways"/>
+	</concept>
+</CodeSystem>

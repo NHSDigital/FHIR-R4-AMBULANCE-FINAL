@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ExistingTreatmentPlans"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ExistingTreatmentPlans"/>
+	<version value="1.0.0"/>
+	<name value="CodeSystem-AmbulanceExistingTreatmentPlans"/>
+	<title value="CodeSystem Ambulance Existing Treatment Plans"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify any Existing Treatment Plans"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="No Treatment Plan in Place - SOP applied"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="EOL"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="DNACPR"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Advanced Care Plan / Directive"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Rare condition"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Mental Health"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Learning disability"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Social Care"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Long term condition"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Hospital at home"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Direct ward / specialist unit access"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Emergency Treatment Plan"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Other Treatment  /  Care Plan"/>
+	</concept>
+</CodeSystem>

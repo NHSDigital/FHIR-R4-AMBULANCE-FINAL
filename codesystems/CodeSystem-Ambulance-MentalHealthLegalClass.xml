@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-MentalHealthLegalClass"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-MentalHealthLegalClass"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystem-AmbulanceMentalHealthLegalClass"/>
+	<title value="CodeSystem Ambulance Mental Health Legal Class"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify an patient's Mental Health Legal Class"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Informal"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="Formally detained under Mental Health Act Section 135"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="Formally detained under Mental Health Act Section 136"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Formally detained under Mental Health Act Section 2"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Formally detained under Mental Health Act Section 3"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Formally detained under Mental Health Act Section 4"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Formally detained under Mental Health Act Section 5(2)"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Formally detained under Mental Health Act Section 5(4)"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Formally detained under Mental Health Act Section 35"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Formally detained under Mental Health Act Section 36"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Formally detained under Mental Health Act Section 37 with section 41 restrictions"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Formally detained under Mental Health Act Section 37"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Formally detained under Mental Health Act Section 38"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="Formally detained under Mental Health Act Section 44"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="Formally detained under Mental Health Act Section 46"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="Formally detained under Mental Health Act Section 47 with section 49 restrictions"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="Formally detained under Mental Health Act Section 47"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="Formally detained under Mental Health Act Section 48 with section 49 restrictions"/>
+	</concept>
+	<concept>
+		<code value="20"/>
+		<display value="Formally detained under Mental Health Act Section 48"/>
+	</concept>
+	<concept>
+		<code value="31"/>
+		<display value="Formally detained under Criminal Procedure(Insanity) Act 1964 as amended by the Criminal Procedures (Insanity and Unfitness to Plead) Act 1991"/>
+	</concept>
+	<concept>
+		<code value="32"/>
+		<display value="Formally detained under other acts"/>
+	</concept>
+	<concept>
+		<code value="35"/>
+		<display value="Subject to guardianship under Mental Health Act Section 7"/>
+	</concept>
+	<concept>
+		<code value="36"/>
+		<display value="Subject to guardianship under Mental Health Act Section 37"/>
+	</concept>
+	<concept>
+		<code value="37"/>
+		<display value="Formally detained under Mental Health Act Section 45A (Limited direction in force)"/>
+	</concept>
+	<concept>
+		<code value="38"/>
+		<display value="Formally detained under Mental Health Act Section 45A (Limitation direction ended)"/>
+	</concept>
+	<concept>
+		<code value="98"/>
+		<display value="Not Applicable"/>
+	</concept>
+	<concept>
+		<code value="99"/>
+		<display value="Not Known"/>
+	</concept>
+</CodeSystem>

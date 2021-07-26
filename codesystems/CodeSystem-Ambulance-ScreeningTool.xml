@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-ScreeningTool"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-ScreeningTool"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystem-AmbulanceScreeningTool"/>
+	<title value="CodeSystem Ambulance Screening Tool"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify the Screening Tool used"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="4ATD"/>
+		<display value="4AT (Rapid clinical test for delerium)"/>
+	</concept>
+	<concept>
+		<code value="APGA"/>
+		<display value="APGAR score"/>
+	</concept>
+	<concept>
+		<code value="ASTH"/>
+		<display value="Asthma classification"/>
+	</concept>
+	<concept>
+		<code value="AVPU"/>
+		<display value="AVPU"/>
+	</concept>
+	<concept>
+		<code value="BABS"/>
+		<display value="Burns-assessment of burned surface area in percent"/>
+	</concept>
+	<concept>
+		<code value="CCST"/>
+		<display value="Canadian C-Spine Test"/>
+	</concept>
+	<concept>
+		<code value="CAPA"/>
+		<display value="Capacity Assessment"/>
+	</concept>
+	<concept>
+		<code value="DEST"/>
+		<display value="Dementia screening test"/>
+	</concept>
+	<concept>
+		<code value="FALL"/>
+		<display value="Falls score"/>
+	</concept>
+	<concept>
+		<code value="FEVC"/>
+		<display value="Fever in children"/>
+	</concept>
+	<concept>
+		<code value="GCSC"/>
+		<display value="Glasgow Coma Score"/>
+	</concept>
+	<concept>
+		<code value="MSAS"/>
+		<display value="Modified Single Alcohol Screening Question"/>
+	</concept>
+	<concept>
+		<code value="MRCD"/>
+		<display value="MRC dyspnoea scale"/>
+	</concept>
+	<concept>
+		<code value="OTTA"/>
+		<display value="Ottawa Ankle Test"/>
+	</concept>
+	<concept>
+		<code value="OTTK"/>
+		<display value="Ottawa Knee Test"/>
+	</concept>
+	<concept>
+		<code value="PDAS"/>
+		<display value="Paediatric dehydration and shock"/>
+	</concept>
+	<concept>
+		<code value="PATQ"/>
+		<display value="Patient Health Questionnaire (PHQ-9)"/>
+	</concept>
+	<concept>
+		<code value="PRES"/>
+		<display value="Pressure sore grading"/>
+	</concept>
+	<concept>
+		<code value="FAST"/>
+		<display value="Stroke Screening Tool / FAST"/>
+	</concept>
+	<concept>
+		<code value="SUIC"/>
+		<display value="Suicide risk assessment"/>
+	</concept>
+	<concept>
+		<code value="TIAS"/>
+		<display value="TIA  Score"/>
+	</concept>
+	<concept>
+		<code value="TUAG"/>
+		<display value="Timed up and Go Test"/>
+	</concept>
+	<concept>
+		<code value="TRAU"/>
+		<display value="Trauma Screening tool"/>
+	</concept>
+	<concept>
+		<code value="WELL"/>
+		<display value="Wells score (PE&amp; DVT)"/>
+	</concept>
+	<concept>
+		<code value="WEST"/>
+		<display value="Westley croup score"/>
+	</concept>
+</CodeSystem>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-HandoverDelayDetail"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-HandoverDelayDetail"/>
+	<version value="1.0.0"/>
+	<name value="CodeSystem-AmbulanceHandoverDelayDetail"/>
+	<title value="CodeSystem Ambulance Handover Delay Detail"/>
+	<status value="draft"/>
+	<date value="2021-07-26T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify a Handover Delay Detail"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="01"/>
+		<display value="Patient handed over within agreed handover period"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="No capacity in the department"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="No cubicle / isolation capacity"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Clinical condition of the patient requires continued support from ambulance staff"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Crew diverted to other department"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Patient taken straight into resuscitation"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Other major incident"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Complex clinical handover and/or care need (e.g. concurrent safeguarding need/bariatric bed required)"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Unknown"/>
+	</concept>
+</CodeSystem>
