@@ -273,38 +273,6 @@
 			</Location>
 		</resource>
 	</entry>
-	<!-- Observation entry for an AMPDS Triage Disposition. -->
-	<entry>
-		<fullUrl value="urn:uuid:d87bc2ec-bd8e-4443-b41f-59b4a978a1f3"/>
-		<resource>
-			<Observation>
-				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-AMPDSTriage-Observation"/>
-				</meta>
-				<!-- FHIR mandatory status code. -->
-				<status value="final"/>
-				<!-- Code to indicate which ADS triage code is being represented in the value -->
-				<code>
-					<coding>
-						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
-						<code value="01"/>
-						<display value="AMPDS Triage Disposition"/>
-					</coding>
-				</code>
-				<focus>
-					<reference value="urn:uuid:b5e05918-9f5d-11ea-bb37-0242ac130002"/>
-				</focus>
-				<!-- ## AMPDS Triage Disposition (ADS16) ## -->
-				<valueCodeableConcept>
-					<coding>
-						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
-						<code value="1A01"/>
-						<display value="Abdominal pain"/>
-					</coding>
-				</valueCodeableConcept>
-			</Observation>
-		</resource>
-	</entry>
 	<!-- First Encounter entry. This encounter covers callsign YAS123 attending to NHS Number 9912003888, who is conveyed to RR807. -->
 	<entry>
 		<fullUrl value="urn:uuid:835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
@@ -942,8 +910,8 @@
 				<!--this code says this obs is an AMPDS Triage Disposition (ADS16)-->
 				<code>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
-						<system value="01"/>
+						<code value="01"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
 						<display value="AMPDS Triage Disposition"/>
 					</coding>
 				</code>
@@ -954,15 +922,15 @@
 				<!--the value for the AMPDSTriageDisposition-->
 				<valueCodeableConcept>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
-						<system value="1A01"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-AMPDSTriageDisposition"/>
+						<code value="1A01"/>
 						<display value="Abdominal pain"/>						
 					</coding>
 				</valueCodeableConcept>
 			</Observation>
 		</resource>
 	</entry>
-	<!--AMPDS Triage Disposition (ADS17-->
+	<!--AMPDS Triage Disposition (ADS17)-->
 	<entry>
 		<fullUrl value="urn:uuid:bf1533f8-309a-4737-b485-73291eb912a8"/>
 		<resource>
@@ -972,8 +940,8 @@
 				<!--this code says this obs is an AMPDS Triage Disposition (ADS17)-->
 				<code>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
-						<system value="02"/>
+						<code value="02"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
 						<display value="Pathways Triage Disposition"/>
 					</coding>
 				</code>
@@ -984,8 +952,8 @@
 				<!--the value for the ADS-TriageCategory-->
 				<valueCodeableConcept>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
-						<system value="DG10"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-PathwaysTriageDisposition"/>
+						<code value="DG10"/>
 						<display value="Ambulance request"/>						
 					</coding>
 				</valueCodeableConcept>
@@ -1002,8 +970,8 @@
 				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
 				<code>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
-						<system value="03"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<code value="03"/>
 						<display value="SG Code (Symptom Group)"/>
 					</coding>
 				</code>
@@ -1014,8 +982,8 @@
 				<!--the value for the SGCodeSymptomGroup-->
 				<valueCodeableConcept>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
-						<system value="SG9"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SGCodeSymptomGroup"/>
+						<code value="SG9"/>
 						<display value="Symptom group display"/>						
 					</coding>
 				</valueCodeableConcept>
@@ -1029,11 +997,11 @@
 			<Observation>
 				<id value="bcd5a787-7359-49f8-8412-2790ab47c8fd"/>
 				<status value="final"/>
-				<!--this code says this obs is an AMPDS Triage Disposition (ADS18)-->
+				<!--this code says this obs is a Symptom Discriminator code (ADS19)-->
 				<code>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
-						<system value="04"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/ADS-TriageCategory"/>
+						<code value="04"/>
 						<display value="SD Code (Symptom Discriminator)"/>
 					</coding>
 				</code>
@@ -1044,8 +1012,8 @@
 				<!--the value for the SGCodeSymptomGroup-->
 				<valueCodeableConcept>
 					<coding>
-						<code value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
-						<system value="SD6"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-SDCodeSymptomDiscriminator"/>
+						<code value="SD6"/>
 						<display value="Symptom Discriminator display"/>						
 					</coding>
 				</valueCodeableConcept>
