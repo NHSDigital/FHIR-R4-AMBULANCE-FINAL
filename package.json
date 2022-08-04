@@ -1,0 +1,12 @@
+ {
+  "name": "uk.adsv2.r4",
+  "version": "1.4.0",
+  "description": "Put a description here",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "author": "nhsdigitalinteroperabilityteam",
+  "dependencies": {
+    "UK.Core.r4.v2": "2.0.8"
+  }
+}
