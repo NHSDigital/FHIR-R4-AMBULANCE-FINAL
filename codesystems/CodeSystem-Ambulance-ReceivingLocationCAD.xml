@@ -41,7 +41,7 @@
 		<display value="Frail Elderly Assessment Unit"/>
 	</concept>
 	<concept>
-		<code value="ACC "/>
+		<code value="ACC"/>
 		<display value="Ambulatory Care Centre"/>
 	</concept>
 	<concept>
