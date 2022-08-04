@@ -1,0 +1,1 @@
+[![IOPS-FHIR-Validation-call](https://github.com/NHSDigital/FHIR-R4-AMBULANCE-FINAL/actions/workflows/validationcall.yml/badge.svg)](https://github.com/NHSDigital/FHIR-R4-AMBULANCE-FINAL/actions/workflows/validationcall.yml)
