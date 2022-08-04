@@ -1512,7 +1512,7 @@
 	<!--NEWS2 scores-->
 	<!--there may be many of these - each NEWS2 will be a seperate resource-->
 	<entry>
-		<fullUrl value="urn:uuid:a964684b-7d16-4b0a-82df-97ad344b6845"/>
+		<fullUrl value="urn:uuid:3d23751f-8ea3-4de9-bdf1-6a6acad592ad"/>
 		<resource>
 			<!--this example shows an overall NEWS2 score only-->
 			<Observation>
@@ -1920,7 +1920,7 @@
 	<!-- ## Episode outcome QuestionnaireResponse EPR ## -->
 	<!--there may be many of these (one per patient)-->
 	<entry>
-		<fullUrl value="urn:uuid:81cbaaca-7272-441c-a7f6-82ecebd7a1d2"/>
+		<fullUrl value="urn:uuid:fc29932b-9b57-40bd-8e95-019afe95332b"/>
 		<resource>
 			<QuestionnaireResponse>
 				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-EpisodeOutcome-Questionnaire"/>
@@ -2123,7 +2123,7 @@
 	</entry>
 	<!-- ## Public health QuestionnaireResponse EPR ## -->
 	<entry>
-		<fullUrl value="urn:uuid:81cbaaca-7272-441c-a7f6-82ecebd7a1d2"/>
+		<fullUrl value="urn:uuid:aa6f3ee7-cff8-44fd-8c02-d7ab1e6afc14"/>
 		<resource>
 			<QuestionnaireResponse>
 				<questionnaire value="http://fhir.nhs.uk/Questionnaire/AmbulanceDataSet-PublicHealth-Questionnaire"/>
