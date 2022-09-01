@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-Ambulance-GenderIdentity"/>
+	<url value="https://fhir.nhs.uk/CodeSystem/Ambulance-GenderIdentity"/>
+	<version value="2.0.0"/>
+	<name value="CodeSystem-AmbulanceGenderIdentity"/>
+	<title value="CodeSystem Ambulance Gender Identity"/>
+	<status value="draft"/>
+	<date value="2022-08-30T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="NHS Digital"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A CodeSystem to identify a patient self-declared gender"/>
+	<copyright value="Copyright © 2021 NHS Digital"/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+<concept><code value="01"/><display value="Male (including trans man)"/></concept>
+<concept><code value="02"/><display value="Female (including trans woman)"/></concept>
+<concept><code value="03"/><display value="Non-binary"/></concept>
+<concept><code value="04"/><display value="Other (not listed)"/></concept>
+<concept><code value="X"/><display value="Not Known (not recorded)"/></concept>
+<concept><code value="Z"/><display value="Not Stated (person asked but declined to provide a response)"/></concept>
+</CodeSystem>

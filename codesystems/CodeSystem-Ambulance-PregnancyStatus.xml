@@ -22,5 +22,6 @@
 	<content value="complete"/>
 <concept><code value="01"/><display value="Pregnant"/></concept>
 <concept><code value="02"/><display value="Not Pregnant"/></concept>
-<concept><code value="03"/><display value="Not asked/collected"/></concept>
+<concept><code value="03"/><display value="Possible pregnancy"/></concept>
+<concept><code value="04"/><display value="Not asked/collected"/></concept>
 </CodeSystem>

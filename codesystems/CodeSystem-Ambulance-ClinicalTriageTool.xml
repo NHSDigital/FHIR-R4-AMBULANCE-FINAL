@@ -21,43 +21,63 @@
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="MTSFTF"/>
+		<code value="01"/>
 		<display value="Manchester Triage System - Face-to-Face"/>
 	</concept>
 	<concept>
-		<code value="MTSTEL"/>
+		<code value="02"/>
 		<display value="Manchester Triage System - via Telephone / Remote Triage"/>
 	</concept>
 	<concept>
-		<code value="PPFMED"/>
+		<code value="03"/>
 		<display value="Paramedic Pathfinder - Medical"/>
 	</concept>
 	<concept>
-		<code value="PPFTRA"/>
+		<code value="04"/>
 		<display value="Paramedic Pathfinder - Trauma"/>
 	</concept>
 	<concept>
-		<code value="MTPPF"/>
-		<display value="Major Trauma Pathfinder / Pathway"/>
+		<code value="05"/>
+		<display value="Major Trauma Pathfinder / Pathway / Triage Tool"/>
 	</concept>
 	<concept>
-		<code value="MCTS"/>
-		<display value="Mass Casualty Triage Sieve"/>
+		<code value="06"/>
+		<display value="Mass Casualty Triage Sieve / NASMeD Triage Sieve (Primary Triage)"/>
 	</concept>
 	<concept>
-		<code value="NART"/>
+		<code value="07"/>
+		<display value="SMART Triage Sort (Secondary Triage)"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Toxic Triage Sieve"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Paediatric Triage Tape Tool"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Modified Triage Sieve (NARU)"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="Silver Trauma Triage Tool"/>
+	</concept>
+	<concept>
+		<code value="12"/>
 		<display value="NaRT - Nursing &amp; Residential Triage Tool"/>
 	</concept>
 	<concept>
-		<code value="ODYS"/>
-		<display value="Odyssey"/>
+		<code value="13"/>
+		<display value="Odyssey Triage System"/>
 	</concept>
 	<concept>
-		<code value="LAAT"/>
+		<code value="14"/>
 		<display value="Low Acuity &amp; Triage / ECN (AMPDS)"/>
 	</concept>
 	<concept>
-		<code value="NHSP"/>
+		<code value="15"/>
 		<display value="NHS Pathways"/>
 	</concept>
 </CodeSystem>
