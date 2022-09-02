@@ -2020,11 +2020,7 @@
 				<item>
 					<linkId value="ADS101"/>
 					<answer>
-						<valueCoding>
-							<system value=""/>
-							<code value=""/>
-							<display value=""/>
-						</valueCoding>
+						<valueString value="RESEARCH-REF-1234"/>
 					</answer>
 				</item>
 			</QuestionnaireResponse>
