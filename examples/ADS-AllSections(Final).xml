@@ -23,7 +23,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-call-ended"/>
 								<display value="Time Call Ended"/>
 							</coding>
@@ -38,7 +38,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-call-answered"/>
 								<display value="Time Call Answered"/>
 							</coding>
@@ -53,7 +53,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="clock-start-date-time"/>
 								<display value="Clock Start Date Time"/>
 							</coding>
@@ -88,7 +88,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-dispatch-code-established"/>
 								<display value="Time Dispatch Code Established"/>
 							</coding>
@@ -286,7 +286,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-mobilised"/>
 								<display value="Time Resource Mobilised"/>
 							</coding>
@@ -301,7 +301,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-stood-down"/>
 								<display value="Time Stood Down"/>
 							</coding>
@@ -316,7 +316,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-arrived-on-scene"/>
 								<display value="Time Resource Arrived On Scene"/>
 							</coding>
@@ -331,7 +331,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-arrived-receiving-location"/>
 								<display value="Time Arrived at Receiving Location"/>
 							</coding>
@@ -346,7 +346,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-patient-handover"/>
 								<display value="Time Patient Handover"/>
 							</coding>
@@ -428,7 +428,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-mobilised"/>
 								<display value="Time Resource Mobilised"/>
 							</coding>
@@ -443,7 +443,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-arrived-on-scene"/>
 								<display value="Time Resource Arrived On Scene"/>
 							</coding>
@@ -458,7 +458,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-left-scene"/>
 								<display value="Time Resource Left Scene"/>
 							</coding>
@@ -534,7 +534,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-mobilised"/>
 								<display value="Time Resource Mobilised"/>
 							</coding>
@@ -549,7 +549,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-resource-arrived-on-scene"/>
 								<display value="Time Resource Arrived On Scene"/>
 							</coding>
@@ -564,7 +564,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-arrived-receiving-location"/>
 								<display value="Time Arrived at Receiving Location"/>
 							</coding>
@@ -579,7 +579,7 @@
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-DateTimeType"/>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DateTimeType"/>
 								<code value="time-patient-handover"/>
 								<display value="Time Patient Handover"/>
 							</coding>
