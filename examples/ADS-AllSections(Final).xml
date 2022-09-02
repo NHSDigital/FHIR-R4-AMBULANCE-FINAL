@@ -189,7 +189,7 @@
 				<statusReason>
 					<coding>
 						<code value="12"/>
-						<system value="http://fhir.nhs.uk/CodeSystem/StopCode"/>
+						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-StopCodes"/>
 						<display value="Police Transported Other"/>
 					</coding>
 				</statusReason>
@@ -256,7 +256,7 @@
 		<resource>
 			<Location>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location"/>
 				</meta>
 				<!-- ## Incident location (ADS22) and Incident location postcode (ADS23) ## -->
 				<address>
@@ -654,7 +654,7 @@
 		<resource>
 			<Patient>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
 				</meta>
 				<!-- ## Patient ethnicity EPR (ADS58) ## -->
 				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
@@ -732,6 +732,7 @@
 		<resource>
 			<Observation>
 				<!--code element will always be as shown-->
+				<status value="final"/>				
 				<code>
 					<coding>
 						<code value="102519007"/>
@@ -759,7 +760,7 @@
 		<resource>
 			<Patient>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
 				</meta>
 				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 					<valueCodeableConcept>
@@ -823,7 +824,7 @@
 		<resource>
 			<Patient>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient"/>
 				</meta>
 				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
 					<valueCodeableConcept>
@@ -1027,7 +1028,7 @@
 		<resource>
 			<Organization>
 				<meta>
-					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
 				</meta>
 				<!-- ## Submitting Organisation Code (ADS0) ## -->
 				<!-- ## Provider Organisation Code (ADS1) ## -->
