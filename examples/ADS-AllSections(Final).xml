@@ -678,7 +678,7 @@
 				</extension>				
 				<identifier>
 					<!-- Extended patient section for NHSNumberVerificationStatus -->
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 						<valueCodeableConcept>
 							<coding>
 								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
@@ -783,7 +783,7 @@
 				</extension>				
 				<identifier>
 					<!-- Extended patient section for NHSNumberVerificationStatus -->
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 						<valueCodeableConcept>
 							<coding>
 								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
@@ -837,7 +837,7 @@
 				</extension>
 				<identifier>
 					<!-- Extended patient section for NHSNumberVerificationStatus -->
-					<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
 						<valueCodeableConcept>
 							<coding>
 								<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
