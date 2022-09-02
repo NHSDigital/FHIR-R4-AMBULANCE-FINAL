@@ -19,7 +19,7 @@
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Communication"/>
 				</meta>
 				<!-- ## Time Call Ended (ADS24) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -34,7 +34,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Call Answered (ADS11) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -49,7 +49,7 @@
 					</extension>
 				</extension>
 				<!-- ## Clock Start Date Time (ADS9) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -84,7 +84,7 @@
 					</valueCodeableConcept>
 				</extension>
 				<!-- ## Time Dispatch Code Established (ADS21) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -282,7 +282,7 @@
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
 				<!-- ## Time Resource Mobilised (ADS39) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -297,7 +297,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time 	Time Stood Down (ADS41) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -312,7 +312,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -327,7 +327,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -342,7 +342,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time of Patient Handover (ADS44) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -424,7 +424,7 @@
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
 				<!-- ## Time Resource Mobilised (ADS39) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -439,7 +439,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -454,7 +454,7 @@
 					</extension>
 				</extension>
 				<!-- ## 	Time Resource Left Scene (ADS42) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -530,7 +530,7 @@
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ADS-Encounter"/>
 				</meta>
 				<!-- ## Time Resource Mobilised (ADS39) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -545,7 +545,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Resource Arrived on Scene (ADS40) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -560,7 +560,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time Resource Arrived at Receiving Location (ADS43) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
@@ -575,7 +575,7 @@
 					</extension>
 				</extension>
 				<!-- ## Time of Patient Handover (ADS44) ## -->
-				<extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TypedDateTime">
+				<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-TypedDateTime">
 					<extension url="dateTimeType">
 						<valueCodeableConcept>
 							<coding>
