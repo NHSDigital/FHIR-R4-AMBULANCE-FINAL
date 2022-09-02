@@ -1621,7 +1621,7 @@
 				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
 				<verificationStatus>
 					<coding>
-						<system value="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
 						<code value="unconfirmed"/>
 						<display value="Unconfirmed"/>
 					</coding>
@@ -1670,7 +1670,7 @@
 				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
 				<verificationStatus>
 					<coding>
-						<system value="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
 						<code value="confirmed"/>
 						<display value="Confirmed"/>
 					</coding>
