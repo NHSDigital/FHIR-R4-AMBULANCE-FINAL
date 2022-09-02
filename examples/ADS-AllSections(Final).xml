@@ -736,8 +736,8 @@
 				<code>
 					<coding>
 						<code value="102519007"/>
-						<display value="http://snomed.info/sct"/>
-						<system value="Apparent age"/>
+						<system value="http://snomed.info/sct"/>
+						<display value="Apparent age"/>
 					</coding>
 				</code>
 				<!--MUST be linked to a subject-->
