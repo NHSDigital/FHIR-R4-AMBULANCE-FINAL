@@ -258,9 +258,8 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
 				</meta>
-				<!-- ## Incident location (ADS22) and Incident location postcode (ADS23) ## -->
+				<!-- ## Incident location postcode (ADS23) ## -->
 				<address>
-					<line value="12 Moseley Wood Bank"/>
 					<postalCode value="LS16 7HY"/>
 				</address>
 				<!-- ## CCG Code (ADS25) ## -->
