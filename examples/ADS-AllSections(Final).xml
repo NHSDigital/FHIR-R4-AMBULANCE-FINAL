@@ -1617,14 +1617,6 @@
 		<fullUrl value="urn:uuid:a0af1eb3-3e3e-4d91-90b7-444d0d0fa645"/>
 		<resource>
 			<Condition>
-				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
-				<verificationStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
-						<code value="unconfirmed"/>
-						<display value="Unconfirmed"/>
-					</coding>
-				</verificationStatus>
 				<!-- ## Final Acuity (SNOMED CT) EPR (ADS79C) ## -->
 				<severity>
 					<coding>
@@ -1666,14 +1658,6 @@
 		<fullUrl value="urn:uuid:3f343fe7-c31e-4520-bb81-79d091851b54"/>
 		<resource>
 			<Condition>
-				<!-- ## 	Working Diagnosis qualifier (SNOMED CT) EPR (ADS76) ## -->
-				<verificationStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
-						<code value="confirmed"/>
-						<display value="Confirmed"/>
-					</coding>
-				</verificationStatus>
 				<!-- ## Final Acuity (SNOMED CT) EPR (ADS79C) ## -->
 				<severity>
 					<coding>
