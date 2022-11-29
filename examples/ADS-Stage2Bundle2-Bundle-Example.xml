@@ -211,14 +211,6 @@
 				<sender>
 					<reference value="urn:uuid:fed005b8-9f5f-11ea-bb37-0242ac130002"/>
 				</sender>
-				<!-- ## Chief Complaint (Call Triage Code) (ADS14) ## -->
-				<reasonCode>
-					<coding>
-						<system value="https://fhir.nhs.uk/R4/CodeSystem/Ambulance-ChiefComplaint"/>
-						<code value="01"/>
-						<display value="Abdominal Pain"/>
-					</coding>
-				</reasonCode>
 			</Communication>
 		</resource>
 	</entry>
