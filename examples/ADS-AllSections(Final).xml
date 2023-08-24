@@ -351,6 +351,11 @@
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="835538cb-5722-41d2-a65e-5491ccb0b7e0"/>
 				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="ABC1234567"/>
+				</identifier>				
 				<status value="finished"/>
 				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
 				<class>
@@ -463,6 +468,11 @@
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="9450d479-328c-4c3c-bf35-efb1d80bd576"/>
 				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="DEF1234567"/>
+				</identifier>				
 				<status value="finished"/>
 				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
 				<class>
@@ -584,6 +594,11 @@
 					<system value="https://tools.ietf.org/html/rfc4122"/>
 					<value value="393c3471-3339-463f-b431-d4fa3f62c313"/>
 				</identifier>
+				<identifier>
+					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
+					<system value="http://RX8/Id/patient-record-identifier"/>
+					<value value="GHI1234567"/>
+				</identifier>				
 				<status value="finished"/>
 				<!-- This is a FHIR mandatory class code, and is fixed as shown. -->
 				<class>
@@ -681,11 +696,6 @@
 					<!-- ## NHS Number (ADS59) ##  -->
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9912003888"/>
-				</identifier>
-				<identifier>
-					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
-					<system value="http://RX8/Id/patient-record-identifier"/>
-					<value value="ABC1234567"/>
 				</identifier>
 				<!-- ## Patient name EPR (ADS54) ## -->
 				<!--structured name-->
@@ -787,11 +797,6 @@
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="2233445566"/>
 				</identifier>
-				<identifier>
-					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
-					<system value="http://RX8/Id/patient-record-identifier"/>
-					<value value="DEF1234567"/>
-				</identifier>
 				<!-- ## Patient name EPR (ADS54) ## -->
 				<name>
 					<use value="usual"/>
@@ -840,11 +845,6 @@
 					<!-- ## NHS Number (ADS59) ##  -->
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9988776655"/>
-				</identifier>
-				<identifier>
-					<!-- ## Unique patient contact record identifier EPR (ADS51) ##  -->
-					<system value="http://RX8/Id/patient-record-identifier"/>
-					<value value="GHI1234567"/>
 				</identifier>
 				<!-- ## Patient name EPR (ADS54) ## -->
 				<name>
@@ -1525,6 +1525,9 @@
 				<subject>
 					<reference value="urn:uuid:44db6f68-440f-4f05-b0a2-d3880c844e79"/>
 				</subject>
+				<encounter>
+					<reference value="urn:uuid:393c3471-3339-463f-b431-d4fa3f62c313"/>
+				</encounter>				
 				<!-- ## 	NEWS2 Score Date and Time EPR (ADS80A) ## -->
 				<effectiveDateTime value="2020-06-29T15:30:32+00:00"/>
 				<!-- ## NEWS2 SCORES EPR (ADS80) ## -->
